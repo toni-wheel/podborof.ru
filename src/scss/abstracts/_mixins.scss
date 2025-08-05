@@ -1,0 +1,34 @@
+/* ===========================================================================
+   Миксины брейкпоинтов — desktop-first подход
+   =========================================================================== */
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+@mixin sm-only {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin md-only {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg-only {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl-only {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}

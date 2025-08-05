@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Базовая разметка и контейнеры
+   ========================================================================== */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-default);
+  line-height: var(--line-height-base);
+  color: var(--color-dark);
+  overflow-x: hidden;
+  background-color: var(--color-background);
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+/* === Структура страницы === */
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* === Контейнеры === */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding-x);
+  padding-right: var(--container-padding-x);
+
+  @include lg-only {
+    padding-left: var(--container-padding-x-md);
+    padding-right: var(--container-padding-x-md);
+  }
+
+  @include sm-only {
+    padding-left: var(--container-padding-x-sm);
+    padding-right: var(--container-padding-x-sm);
+  }
+
+  &--row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

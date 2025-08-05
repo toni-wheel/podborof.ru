@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Шрифты
+   ========================================================================== */
+
+/* === Универсальный миксин === */
+
+@mixin font($family, $file-path, $weight, $style: normal) {
+  @font-face {
+    font-family: "#{$family}";
+    src: url("#{$file-path}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: $style;
+    font-display: swap;
+  }
+}
+
+/* === Commissioner === */
+
+@include font(
+  "Commissioner",
+  "@/assets/fonts/Commissioner/Commissioner-Thin",
+  100
+);
+@include font(
+  "Commissioner",
+  "@/assets/fonts/Commissioner/Commissioner-ExtraLight",
+  200
+);
+@include font(
+  "Commissioner",
+  "@/assets/fonts/Commissioner/Commissioner-Light",
+  300
+);
+@include font(
+  "Commissioner",
+  "@/assets/fonts/Commissioner/Commissioner-Regular",
+  400
+);
+@include font(
+  "Commissioner",
+  "@/assets/fonts/Commissioner/Commissioner-Medium",
+  500
+);
+@include font(
+  "Commissioner",
+  "@/assets/fonts/Commissioner/Commissioner-SemiBold",
+  600
+);
+@include font(
+  "Commissioner",
+  "@/assets/fonts/Commissioner/Commissioner-Bold",
+  700
+);
+@include font(
+  "Commissioner",
+  "@/assets/fonts/Commissioner/Commissioner-ExtraBold",
+  800
+);
+@include font(
+  "Commissioner",
+  "@/assets/fonts/Commissioner/Commissioner-Black",
+  900
+);
+
+/* ===  Golos Text === */
+
+@include font("Golos Text", "@/assets/fonts/Golos_Text/GolosText-Regular", 400);
+@include font("Golos Text", "@/assets/fonts/Golos_Text/GolosText-Medium", 500);
+@include font(
+  "Golos Text",
+  "@/assets/fonts/Golos_Text/GolosText-SemiBold",
+  600
+);
+@include font("Golos Text", "@/assets/fonts/Golos_Text/GolosText-Bold", 700);
+@include font(
+  "Golos Text",
+  "@/assets/fonts/Golos_Text/GolosText-ExtraBold",
+  800
+);
+@include font("Golos Text", "@/assets/fonts/Golos_Text/GolosText-Black", 900);
+
+/* === Roboto === */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");

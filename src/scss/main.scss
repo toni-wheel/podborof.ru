@@ -1,0 +1,29 @@
+// ───────────────────────────────────────────────────────────────
+// main.scss — единая точка входа всех стилей проекта
+// ───────────────────────────────────────────────────────────────
+//
+// ▸ abstracts/   – переменные, функции, миксины
+// ▸ base/        – базовые и глобальные стили страницы
+// ▸ layout/      – сетки, контейнеры
+// ▸ components/  – UI-элементы
+// ▸ pages/       – специфичные стили страниц
+// ▸ themes/      – темы оформления
+// ───────────────────────────────────────────────────────────────
+
+@forward "abstracts/vars";
+@forward "abstracts/functions";
+@forward "abstracts/mixins";
+
+@use "base/reset";
+@use "base/fonts";
+@use "base/global";
+
+@use "layout/grid";
+
+@use "components/button";
+@use "components/card";
+
+@use "pages/home";
+
+@use "themes/light";
+@use "themes/dark";

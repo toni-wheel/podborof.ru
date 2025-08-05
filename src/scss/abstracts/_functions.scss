@@ -1,0 +1,29 @@
+/* ===========================================================================
+   SCSS Функции
+   =========================================================================== */
+
+/* === px в rem === */
+@function rem($px) {
+  @return ($px / 16) * 1rem;
+}
+
+/* === % от числа === */
+@function percent($value, $total) {
+  @return ($value / $total) * 100%;
+}
+
+/* === Получить CSS-переменную с фолбэком === */
+@function css($name, $fallback: null) {
+  @if $fallback {
+    @return unquote("var(#{$name}, #{$fallback})");
+  }
+  @return unquote("var(#{$name})");
+}
+
+/* === Убрать единицу измерения === */
+@function no-unit($value) {
+  @if type-of($value) == "number" and not unitless($value) {
+    @return $value / ($value * 0 + 1);
+  }
+  @return $value;
+}
