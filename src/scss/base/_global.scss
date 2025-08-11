@@ -26,9 +26,9 @@ body {
 
   &::before {
     content: "";
-    position: fixed;
+    position: absolute;
     inset: 0;
-    background: url("../../assets/images/promo-bg.png") center/cover no-repeat;
+    background: url("../../assets/images/promo-bg.png") bottom / cover no-repeat;
     z-index: -1;
     pointer-events: none;
   }

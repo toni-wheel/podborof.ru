@@ -1,26 +1,9 @@
 .promo {
   position: relative;
-  padding: 50px 0;
-  color: #ffffff;
+  padding: 100px 0;
+  color: #fff;
   display: flex;
   align-items: center;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(18, 20, 26, 0);
-    z-index: 0;
-  }
-
-  .container {
-    position: relative;
-    z-index: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 100%;
-  }
 
   &-content {
     display: grid;
