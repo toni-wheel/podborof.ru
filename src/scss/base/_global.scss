@@ -18,9 +18,19 @@ body {
   color: var(--color-dark);
   overflow-x: hidden;
   background-color: var(--color-background);
+  position: relative;
 
   &.noscroll {
     overflow: hidden;
+  }
+
+  &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("../../assets/images/promo-bg.png") center/cover no-repeat;
+    z-index: -1;
+    pointer-events: none;
   }
 }
 
