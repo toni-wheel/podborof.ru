@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Автоподбор — поможем купить проверенный автомобиль</title>
+
+    <meta
+      name="description"
+      content="Автоподбор под ключ: проверка истории, диагностика, торг и оформление"
+    />
+
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- ===== ШАПКА ===== -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="#promo" class="logo" aria-label="На главную">
+          <span class="logo__mark" aria-hidden="true"></span>
+          <span>Автоподбор</span>
+        </a>
+        <nav class="nav" aria-label="Главное меню">
+          <a href="#promo">Промо</a>
+          <a href="#tricks">Обман продавцов</a>
+          <a href="#risks">Риски</a>
+          <a href="#process">Как подбираем</a>
+          <a href="#inspection">Осмотр</a>
+          <a href="#prices">Цены</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+        <div class="socials" aria-label="Соцсети">
+          <a href="#" aria-label="WhatsApp" title="WhatsApp">
+            <svg class="icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path
+                d="M16 17c-2 1-6-1-8-5-1-2-1-3 0-4l2 1-1 2c1 2 3 3 5 4l2-1 2 2-2 1z"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="Telegram" title="Telegram">
+            <svg class="icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M7 12l10-5-3 10-3-3-2 2 1-4z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="VK" title="VK">
+            <svg class="icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M7 9h2l1 2 1-2h2l-1 2 2 3h-2l-1-1-1 1H9l2-3-1-2H7z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== ПРОМО ===== -->
+      <section id="promo" class="promo">
+        <div class="container promo__wrap">
+          <div>
+            <span class="badge">Подбор под ключ</span>
+            <h1 class="promo__title">
+              Купим вам проверенный автомобиль без сюрпризов
+            </h1>
+            <p class="promo__lead">
+              Проверяем юридическую чистоту, историю обслуживания, техническое
+              состояние и торгуемся за адекватную цену. Вы получаете готовый к
+              эксплуатации авто.
+            </p>
+            <div
+              style="
+                display: flex;
+                gap: 10px;
+                margin-top: 14px;
+                flex-wrap: wrap;
+              "
+            >
+              <a class="cta" href="#contact">Оставить заявку</a>
+              <a class="cta" href="#prices" style="background: #0f172a"
+                >Посмотреть цены</a
+              >
+            </div>
+          </div>
+          <div class="promo__illus">
+            <img src="./assets/images/check-car.png" alt="Проверка авто" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ОБМАН ПРОДАВЦОВ ===== -->
+      <section id="tricks" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Обман продавцов</h2>
+            <p>
+              Типичные хитрости, на которые легко попасться при самостоятельной
+              покупке.
+            </p>
+          </div>
+          <div class="grid grid--3">
+            <div class="card">
+              <h3>Скрученный пробег</h3>
+              <p>
+                Несоответствие по диагностике блоков и сервисным записям, износ
+                салона не бьётся с цифрами.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Скрытое ДТП</h3>
+              <p>
+                Некачественный ремонт, замена элементов без совпадения зазоров,
+                свежая покраска на отдельных деталях.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Юр. проблемы</h3>
+              <p>
+                Залог у банка, ограничения на регистрационные действия, штрафы и
+                «двойники».
+              </p>
+            </div>
+            <div class="card">
+              <h3>Подмена комплектации</h3>
+              <p>
+                Пакеты опций «на словах», фактически — базовая версия или
+                «конструктор».
+              </p>
+            </div>
+            <div class="card">
+              <h3>Маскировка дефектов</h3>
+              <p>
+                Подливка присадок, прогретый мотор к показу, «свежие» расходники
+                лишь для вида.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Нереальная цена</h3>
+              <p>
+                «Приманка» в объявлении, а на месте — совсем другой автомобиль и
+                условия.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== РИСКИ ДЛЯ ВАС ===== -->
+      <section id="risks" class="section section--soft">
+        <div class="container">
+          <div class="section__head">
+            <h2>Риски для вас</h2>
+            <p>
+              Мы знаем, где искать проблемы, чтобы вы не платили за чужие
+              ошибки.
+            </p>
+          </div>
+          <div class="grid grid--2">
+            <div class="card">
+              <h3>Финансовые потери</h3>
+              <ul class="list">
+                <li>Покупка «битой» машины по цене целой</li>
+                <li>Дорогой ремонт скрытых неисправностей</li>
+                <li>Падение ликвидности при перепродаже</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Юридические последствия</h3>
+              <ul class="list">
+                <li>Арест/розыск, проблемы с регистрацией</li>
+                <li>Споры с банками/страховыми</li>
+                <li>Риск угона или «двойника»</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== КАК ПОДБИРАЕМ ===== -->
+      <section id="process" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Как подбираем</h2>
+            <p>Прозрачный процесс — вы понимаете, за что платите.</p>
+          </div>
+          <div class="grid steps">
+            <div class="card step">
+              <div class="step__num"></div>
+              <div>
+                <h3>Бриф и критерии</h3>
+                <p>
+                  Обсуждаем бюджет, задачи, требования к
+                  модели/мотору/комплектации.
+                </p>
+              </div>
+            </div>
+            <div class="card step">
+              <div class="step__num"></div>
+              <div>
+                <h3>Аналитика рынка</h3>
+                <p>
+                  Формируем шорт‑лист объявлений, отсекаем «мутные» варианты.
+                </p>
+              </div>
+            </div>
+            <div class="card step">
+              <div class="step__num"></div>
+              <div>
+                <h3>Выезд и проверка</h3>
+                <p>
+                  Диагностика ЛКП, мотор/АКПП, электрическая часть, компьютерная
+                  проверка.
+                </p>
+              </div>
+            </div>
+            <div class="card step">
+              <div class="step__num"></div>
+              <div>
+                <h3>Торг и договор</h3>
+                <p>
+                  Снижаем цену по фактам, готовим документы, сопровождаем
+                  сделку.
+                </p>
+              </div>
+            </div>
+            <div class="card step">
+              <div class="step__num"></div>
+              <div>
+                <h3>Передача авто</h3>
+                <p>
+                  Вы получаете ключи и полный отчёт с фотографиями и
+                  рекомендациями.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ОСМОТР АВТО ===== -->
+      <section id="inspection" class="section section--soft">
+        <div class="container">
+          <div class="section__head">
+            <h2>Осмотр авто</h2>
+            <p>Чек‑лист проверки, который используем на выезде.</p>
+          </div>
+          <div class="grid grid--3">
+            <div class="card">
+              <h3>Кузов и геометрия</h3>
+              <ul class="list">
+                <li>Толщина ЛКП по элементам</li>
+                <li>Зазоры, крепления, стекла</li>
+                <li>Следы коррозии и ДТП</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Двигатель и трансмиссия</h3>
+              <ul class="list">
+                <li>Утечки, шумы, вибрации</li>
+                <li>Скан ошибок ЭБУ</li>
+                <li>Работа АКПП/МКПП</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Ходовая и тормоза</h3>
+              <ul class="list">
+                <li>Сайлентблоки, шаровые, стойки</li>
+                <li>Диски/колодки, ABS</li>
+                <li>Шины и износ</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Электрика</h3>
+              <ul class="list">
+                <li>Свет, стеклоподъёмники</li>
+                <li>Климат, мультимедиа</li>
+                <li>Аккумулятор, заряд</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>История и юр. чистота</h3>
+              <ul class="list">
+                <li>Пробивка по базам</li>
+                <li>Сервисные записи</li>
+                <li>Количество владельцев</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Тест‑драйв</h3>
+              <ul class="list">
+                <li>Динамика, коробка, рулевое</li>
+                <li>Посторонние шумы</li>
+                <li>Работа всех систем</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ЦЕНЫ ===== -->
+      <section id="prices" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Цены</h2>
+            <p>Пакеты услуг — выберите подходящий формат сотрудничества.</p>
+          </div>
+          <div class="grid grid--3">
+            <div class="card price">
+              <h3>Старт</h3>
+              <div class="price__value">9 900 ₽</div>
+              <p>Разовый выезд и полный отчёт по одному авто.</p>
+              <ul class="list" style="text-align: left">
+                <li>Диагностика на месте</li>
+                <li>Компьютерная проверка</li>
+                <li>Рекомендации по торгу</li>
+              </ul>
+              <a class="cta" href="#contact">Выбрать</a>
+            </div>
+            <div class="card price" style="border-width: 2px">
+              <h3>Стандарт</h3>
+              <div class="price__value">24 900 ₽</div>
+              <p>Подбор по вашим критериям и сопровождение сделки.</p>
+              <ul class="list" style="text-align: left">
+                <li>До 5 проверок авто</li>
+                <li>Торг с продавцом</li>
+                <li>Проверка истории и юр. чистоты</li>
+              </ul>
+              <a class="cta" href="#contact">Выбрать</a>
+            </div>
+            <div class="card price">
+              <h3>Полный</h3>
+              <div class="price__value">39 900 ₽</div>
+              <p>Под ключ: от анализа рынка до постановки на учёт.</p>
+              <ul class="list" style="text-align: left">
+                <li>Неограниченный шорт‑лист</li>
+                <li>Сопровождение в ГИБДД</li>
+                <li>Гарантия на подбор</li>
+              </ul>
+              <a class="cta" href="#contact">Выбрать</a>
+            </div>
+          </div>
+          <p class="small" style="margin-top: 10px">
+            Цены ориентировочные и зависят от региона/класса авто. Финальную
+            стоимость согласуем до начала работ.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== ОТЗЫВЫ ===== -->
+      <section id="reviews" class="section section--soft">
+        <div class="container">
+          <div class="section__head">
+            <h2>Отзывы</h2>
+            <p>Что говорят клиенты после сделки.</p>
+          </div>
+          <div class="grid grid--3">
+            <div class="card">
+              <div class="review__name">Алексей П.</div>
+              <div class="review__meta">Mazda 6, 2018</div>
+              <p>
+                Сэкономили 120 тыс. на торге и нашли живой экземпляр без ДТП.
+                Документы подготовили, я только подписал.
+              </p>
+            </div>
+            <div class="card">
+              <div class="review__name">Ирина К.</div>
+              <div class="review__meta">Kia Rio, 2020</div>
+              <p>
+                Подобрали за неделю. Подробный отчёт с фото, по каждому пункту
+                всё понятно. Рекомендую.
+              </p>
+            </div>
+            <div class="card">
+              <div class="review__name">Дмитрий С.</div>
+              <div class="review__meta">Skoda Octavia, 2017</div>
+              <p>
+                Без вас скорее всего взял бы «утопленника». Спасибо за
+                внимательность и честность.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== КОНТАКТЫ / ФОРМА ===== -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Оставить заявку</h2>
+            <p>
+              Напишите пару слов о желаемом автомобиле — мы перезвоним и всё
+              расскажем.
+            </p>
+          </div>
+          <form class="form" action="#" method="post">
+            <div class="field">
+              <label for="name">Ваше имя</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                class="input"
+                placeholder="Иван"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="phone">Телефон</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                class="input"
+                placeholder="+7 (___) ___-__-__"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="msg">Пожелания</label>
+              <textarea
+                id="msg"
+                name="message"
+                class="textarea"
+                placeholder="Бюджет, марка/модель, год, важные опции"
+              ></textarea>
+            </div>
+            <button class="cta" type="submit">Отправить</button>
+            <p class="small">
+              Нажимая «Отправить», вы соглашаетесь с обработкой персональных
+              данных.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== ФУТЕР ===== -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <div class="logo" style="margin-bottom: 8px">
+            <span class="logo__mark" aria-hidden="true"></span>
+            <span>Автоподбор</span>
+          </div>
+          <p class="small">
+            Подбор и проверка автомобилей с прозрачной отчётностью и
+            сопровождением сделки.
+          </p>
+        </div>
+        <div>
+          <h3 style="color: #e2e8f0">Контакты</h3>
+          <p><a href="tel:+79990000000">+7 (999) 000‑00‑00</a></p>
+          <p><a href="mailto:info@example.com">info@example.com</a></p>
+          <div style="display: flex; gap: 10px; margin-top: 8px">
+            <a href="#" aria-label="WhatsApp" title="WhatsApp"
+              ><svg class="icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M16 17c-2 1-6-1-8-5-1-2-1-3 0-4l2 1-1 2c1 2 3 3 5 4l2-1 2 2-2 1z"
+                /></svg
+            ></a>
+            <a href="#" aria-label="Telegram" title="Telegram"
+              ><svg class="icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M7 12l10-5-3 10-3-3-2 2 1-4z" /></svg
+            ></a>
+            <a href="#" aria-label="VK" title="VK"
+              ><svg class="icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M7 9h2l1 2 1-2h2l-1 2 2 3h-2l-1-1-1 1H9l2-3-1-2H7z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h3 style="color: #e2e8f0">Навигация</h3>
+          <p><a href="#tricks">Обман продавцов</a></p>
+          <p><a href="#risks">Риски</a></p>
+          <p><a href="#process">Как подбираем</a></p>
+          <p><a href="#inspection">Осмотр</a></p>
+          <p><a href="#prices">Цены</a></p>
+          <p><a href="#reviews">Отзывы</a></p>
+        </div>
+      </div>
+      <div class="container" style="margin-top: 16px">
+        <p class="small">
+          © <span id="y">2025</span> Автоподбор. Все права защищены.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
