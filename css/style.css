@@ -71,6 +71,9 @@ p {
   align-items: center;
   gap: 10px;
 }
+.logo__icon {
+  height: 50px;
+}
 .logo__text {
   font-size: 20px;
   font-weight: 600;
