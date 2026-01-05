@@ -12,43 +12,98 @@
     <link rel="stylesheet" href="./assets/styles/global.css" />
     <link rel="stylesheet" href="./assets/styles/styles.css" />
 
-    <title>Podborof - экспертный подбор авто</title>
+    <title>Podborof - профессиональный автоподбор</title>
   </head>
   <body>
-    <section class="promo">
-      <div class="container promo__container">
-        <div class="row promo__row align-items-center">
-          <div class="col-12 col-lg-8 promo__content mb-5 mb-lg-0">
-            <h1 class="promo__title mb-4">
+    <header class="header">
+      <div class="container header__container">
+        <div class="row header__row align-items-center">
+          <div class="col-12 col-lg-8 header__content mb-5 mb-lg-0">
+            <h1 class="header__title mb-4">
               ПРОФЕССИОНАЛЬНЫЙ<br />
               АВТОПОДБОР
             </h1>
 
-            <p class="promo__text mb-5">
-              Подберем авто вашей мечты<br />
+            <p class="header__text mb-5">
+              Подберем автомобиль вашей мечты<br />
               с гарантией качества и безопасности
             </p>
 
-            <div class="promo__actions">
+            <div class="header__actions">
               <button
                 type="button"
-                class="promo__button promo__button--primary"
+                class="header__button header__button--primary"
               >
                 ЗАКАЗАТЬ ПОДБОР
               </button>
               <button
                 type="button"
-                class="promo__button promo__button--secondary"
+                class="header__button header__button--secondary"
               >
                 КОНСУЛЬТАЦИЯ
               </button>
             </div>
           </div>
 
-          <div class="col-12 col-lg-4 promo__media"></div>
+          <div class="col-12 col-lg-4 header__media"></div>
         </div>
       </div>
-    </section>
+    </header>
+
+    <main class="main">
+      <section class="services py-5">
+        <div class="container">
+          <h2 class="section-title mb-5">Наши услуги</h2>
+
+          <div class="row services__grid g-4">
+            <div class="col-12 col-md-4">
+              <article class="service-card">
+                <div class="service-card__img">
+                  <img
+                    src="./assets/images/service-1.png"
+                    alt="Подбор автомобиля под ключ"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="service-card__title">
+                  Подбор автомобиля «под ключ»
+                </h3>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <article class="service-card">
+                <div class="service-card__img">
+                  <img
+                    src="./assets/images/service-2.png"
+                    alt="Проверка автомобиля перед покупкой"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="service-card__title">
+                  Проверка автомобиля перед покупкой
+                </h3>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <article class="service-card">
+                <div class="service-card__img">
+                  <img
+                    src="./assets/images/service-3.png"
+                    alt="Эксперт на день"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="service-card__title">Эксперт на день</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
 
     <script src="./assets/scripts/script.js"></script>
   </body>
