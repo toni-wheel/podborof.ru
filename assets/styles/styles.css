@@ -1,0 +1,41 @@
+.promo {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/promo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.promo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.35) 35%,
+    rgba(0, 0, 0, 0.15) 65%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.promo__container {
+  position: relative;
+  z-index: 1;
+}
+
+.promo__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #fff;
+}
+
+.promo__text {
+  font-size: 24px;
+  color: rgb(255, 255, 255, 0.9);
+}
