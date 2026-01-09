@@ -27,12 +27,6 @@
 }
 
 .site-nav__logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.site-nav__logo-text {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -78,85 +72,40 @@
   color: var(--accent);
 }
 
-.site-nav__burger-button {
-  display: inline-flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  background: #fff;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
-}
-
-.site-nav__burger-button:hover {
-  border-color: #fff;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-}
-
-.site-nav__burger-button:active {
-  box-shadow: none;
-}
-
-.site-nav__burger-button:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(47, 107, 255, 0.3);
-}
-
-.site-nav__burger-lines {
-  position: relative;
-  width: 20px;
-  height: 15px;
-}
-
-.site-nav__burger-lines span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: #fff;
-  border-radius: 999px;
-  transform-origin: center;
-  transition: transform 0.25s ease, opacity 0.2s ease;
-}
-
-.site-nav__burger-lines span:nth-child(1) {
-  top: 0;
-}
-
-.site-nav__burger-lines span:nth-child(2) {
-  top: 6px;
-}
-
-.site-nav__burger-lines span:nth-child(3) {
-  top: 12px;
-}
-
-.site-nav[data-menu-open="true"] .site-nav__burger-lines span:nth-child(1) {
-  transform: translateY(6px) rotate(45deg);
-}
-
-.site-nav[data-menu-open="true"] .site-nav__burger-lines span:nth-child(2) {
-  opacity: 0;
-}
-
-.site-nav[data-menu-open="true"] .site-nav__burger-lines span:nth-child(3) {
-  transform: translateY(-6px) rotate(-45deg);
-}
-
 #site-nav-menu {
   display: none;
+}
+
+.site-nav__phone {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.site-nav__social {
+  width: 37px;
+  height: 37px;
+}
+
+.serivce-card__price {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin-top: auto !important;
 }
 
 @media (min-width: 992px) {
   #site-nav-menu {
     display: flex;
-  }
-
-  .site-nav__burger-button {
-    display: none;
   }
 }
 
@@ -171,6 +120,7 @@
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  padding-top: 70px;
 }
 
 .header::before {
@@ -458,27 +408,27 @@
 }
 
 .services__grid .service-card {
-  background: url("../images/card-bg.png") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  background: url("../images/card-bg.png") center/cover;
   background-size: 200%;
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
   transform: translateZ(0);
   transition: transform 200ms ease, box-shadow 200ms ease;
+  height: 100%;
 }
 
 .services__grid .service-card:hover {
   transform: scale(1.03);
 }
 
-.service-card {
-  height: 100%;
-}
-
 .service-card__img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .service-card__img img {
@@ -488,10 +438,15 @@
   object-fit: cover;
 }
 
+.service-card__info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex-grow: 1;
+}
+
 .service-card__title {
   font-size: 18px;
-  margin: 0;
-  padding: 22px 24px 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -500,6 +455,29 @@
 .services__grid .service-card {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45),
     0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.service-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.service-card__list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.service-card__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff7a18 0%, #ff7a18 45%, #ff7a18 100%);
 }
 
 .why-us__stats {
@@ -626,4 +604,8 @@
 
 .why-stat__text {
   max-width: 220px;
+}
+
+.text-orange {
+  color: #ff974e;
 }
