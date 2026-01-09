@@ -7,6 +7,10 @@
   --border: #2a313a;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container--default {
   max-width: 1320px;
 }
