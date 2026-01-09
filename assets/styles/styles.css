@@ -89,6 +89,10 @@
   background: rgba(0, 0, 0, 0.02);
 }
 
+.site-nav__phone:hover {
+  color: var(--accent);
+}
+
 .site-nav__social {
   width: 37px;
   height: 37px;
@@ -608,4 +612,44 @@
 
 .text-orange {
   color: #ff974e;
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.6); /* оверлей */
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  /* скролл по оверлею */
+  overflow-y: auto;
+  padding: 20px; /* чтобы окно не прилипало к краям */
+}
+
+/* контейнер окна */
+.popup__container {
+  width: 100%;
+  max-width: 1000px;
+
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
