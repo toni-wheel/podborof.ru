@@ -380,6 +380,83 @@
           </div> -->
         </div>
       </section>
+
+      <section class="about-us py-4 py-lg-5">
+        <div class="container">
+          <h2 class="section-title mb-4 mb-lg-5">О нас</h2>
+
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+              <div class="about-us__image">
+                <img
+                  src="./assets/images/avtomehanik-v-avtoservise-proveraet-masinu.jpg"
+                  alt="О нас"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="about-us__text">
+                <p class="about-us__text-primary">
+                  С 2015 года профессионально занимаюсь автоподбором в
+                  Екатеринбурге, Свердловской области, а так же по всей РФ.
+                  Найду для Вас лучший автомобиль и сделаю покупку максимально
+                  выгодной и безопасной!
+                </p>
+                <p class="about-us__text-primary">
+                  Люди научились скрывать недостатки с большей ухищренностью.
+                  Кузов научились красить под толщиномер. Машины, те которые уже
+                  не подлежат восстановлению, восстанавливают и реализуют как
+                  небитые. Пробег сейчас «сматывает» каждый 3 продавец.
+                </p>
+                <p class="about-us__text-highlight">
+                  К проверке авто нужно подходить более ответственно, чтобы в
+                  дальнейшем сэкономить свои средства, время и нервы. Для этого
+                  нужна
+                  <span>комплексная диагностика</span> автомобиля перед
+                  покупкой.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="yandex-map-section">
+        <div id="yandex-map" class="yandex-map"></div>
+      </section>
+
+      <script
+        src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=YOUR_API_KEY"
+        type="text/javascript"
+      ></script>
+      <script>
+        ymaps.ready(function () {
+          var myMap = new ymaps.Map("yandex-map", {
+            center: [56.838, 60.598],
+            zoom: 14,
+            controls: ["zoomControl", "fullscreenControl"],
+          });
+
+          var myPlacemark = new ymaps.Placemark(
+            [56.838, 60.598],
+            {
+              balloonContentHeader: "ул. Хохрякова, 61, Екатеринбург",
+              balloonContentBody:
+                '<p><strong>Телефон:</strong> <a href="tel:+79326109113">+7 932 610 91 13</a></p>' +
+                '<p><strong>Почта:</strong> <a href="mailto:cck96@yandex.ru">Cck96@yandex.ru</a></p>' +
+                "<p><strong>Часы работы:</strong> Пн-Вс: 10:00 - 21:00</p>",
+              balloonContentFooter: "Контактная информация",
+            },
+            {
+              preset: "islands#redDotIcon",
+            }
+          );
+
+          myMap.geoObjects.add(myPlacemark);
+          myPlacemark.balloon.open();
+        });
+      </script>
     </main>
 
     <footer class="footer"></footer>
