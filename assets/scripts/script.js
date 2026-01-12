@@ -17,3 +17,46 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+$(document).ready(function () {
+  const $carousels = $(".owl-carousel");
+
+  if (!$carousels.length) return;
+
+  $carousels.each(function () {
+    $(this).owlCarousel({
+      loop: true,
+      center: true,
+      nav: true,
+      dots: true,
+      margin: 16,
+      stagePadding: 200,
+      smartSpeed: 600,
+      navText: [
+        `<svg width="19" height="32" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.1421 2L2.99998 16.1421L17.1421 30.2843" stroke="currentColor" stroke-width="3"/>
+        </svg>`,
+        `<svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.14215 2L15.2843 16.1421L1.14215 30.2843" stroke="currentColor" stroke-width="3"/>
+        </svg>`,
+      ],
+      responsive: {
+        0: {
+          items: 1,
+          center: false,
+          stagePadding: 0,
+        },
+        768: {
+          items: 1,
+          center: true,
+          stagePadding: 100,
+        },
+        1024: {
+          items: 1,
+          center: true,
+          stagePadding: 200,
+        },
+      },
+    });
+  });
+});
