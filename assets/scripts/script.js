@@ -30,7 +30,7 @@ $(document).ready(function () {
       nav: true,
       dots: true,
       margin: 16,
-      stagePadding: 200,
+      stagePadding: 100,
       smartSpeed: 600,
       navText: [
         `<svg width="19" height="32" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,18 +43,18 @@ $(document).ready(function () {
       responsive: {
         0: {
           items: 1,
-          center: false,
+          center: true,
           stagePadding: 0,
         },
         768: {
           items: 1,
           center: true,
-          stagePadding: 100,
+          stagePadding: 0,
         },
         1024: {
           items: 1,
           center: true,
-          stagePadding: 200,
+          stagePadding: 100,
         },
       },
     });
