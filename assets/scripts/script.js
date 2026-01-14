@@ -60,3 +60,36 @@ $(document).ready(function () {
     });
   });
 });
+
+lightbox.option({
+  resizeDuration: 100,
+  fadeDuration: 100,
+  imageFadeDuration: 100,
+  wrapAround: true,
+});
+
+ymaps.ready(function () {
+  var myMap = new ymaps.Map("yandex-map", {
+    center: [56.838, 60.598],
+    zoom: 14,
+    controls: ["zoomControl", "fullscreenControl"],
+  });
+
+  var myPlacemark = new ymaps.Placemark(
+    [56.838, 60.598],
+    {
+      balloonContentHeader: "ул. Хохрякова, 61, Екатеринбург",
+      balloonContentBody:
+        '<p><strong>Телефон:</strong> <a href="tel:+79326109113">+7 932 610 91 13</a></p>' +
+        '<p><strong>Почта:</strong> <a href="mailto:cck96@yandex.ru">Cck96@yandex.ru</a></p>' +
+        "<p><strong>Часы работы:</strong> Пн-Вс: 10:00 - 21:00</p>",
+      balloonContentFooter: "Контактная информация",
+    },
+    {
+      preset: "islands#redDotIcon",
+    }
+  );
+
+  myMap.geoObjects.add(myPlacemark);
+  myPlacemark.balloon.open();
+});
