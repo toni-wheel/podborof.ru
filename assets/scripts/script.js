@@ -93,3 +93,17 @@ ymaps.ready(function () {
   myMap.geoObjects.add(myPlacemark);
   myPlacemark.balloon.open();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.querySelector(".about-us__toggle");
+  const moreText = document.querySelector(".about-us__more");
+
+  if (!toggleBtn || !moreText) return;
+
+  toggleBtn.addEventListener("click", function () {
+    moreText.classList.toggle("is-open");
+    toggleBtn.textContent = moreText.classList.contains("is-open")
+      ? "Скрыть"
+      : "Подробнее";
+  });
+});
