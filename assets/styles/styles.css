@@ -1125,3 +1125,119 @@ html {
     bottom: auto !important;
   }
 }
+
+.feedback__container {
+  position: relative;
+  border-radius: 16px;
+  max-width: 600px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  background: url(../images/card-bg.png) center / cover;
+  background-size: 200%;
+}
+
+.feedback__container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.feedback__container > * {
+  position: relative;
+  z-index: 1;
+}
+
+.feedback-form__input {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #111;
+  letter-spacing: 0.66px;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease, transform 0.3s ease;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.feedback-form__input::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.66px;
+}
+
+.feedback-form__submit {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 16px;
+  letter-spacing: 0.5px;
+  transition: background-position 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #ffcc80 0%, #ff7a18 45%, #ff3d00 100%);
+}
+
+.feedback-form__submit:hover {
+  background-position: 100% 50%;
+  transform: translateY(-2px);
+}
+
+.feedback__agreement {
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.feedback__agreement-link {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .feedback__container {
+    padding: 40px 30px;
+    max-width: 100%;
+  }
+
+  .feedback-form__input {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+
+  .feedback-form__submit {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .feedback__container {
+    padding: 30px 20px;
+  }
+
+  .feedback-form__input {
+    padding: 13px 18px;
+    font-size: 15px;
+  }
+
+  .feedback-form__submit {
+    padding: 13px 18px;
+    font-size: 15px;
+  }
+
+  .feedback__agreement {
+    font-size: 13px;
+  }
+}

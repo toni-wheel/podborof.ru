@@ -84,10 +84,10 @@
               <a href="#cases" class="site-nav__link">Примеры работ</a>
             </li>
             <li class="site-nav__item">
-              <a href="#" class="site-nav__link">Оставить заявку</a>
+              <a href="#about" class="site-nav__link">О нас</a>
             </li>
             <li class="site-nav__item">
-              <a href="#about" class="site-nav__link">О нас</a>
+              <a href="#feedback" class="site-nav__link">Оставить заявку</a>
             </li>
           </ul>
         </div>
@@ -626,6 +626,56 @@
                 </div>
 
                 <button class="about-us__toggle d-lg-none">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback py-4 py-lg-5" id="feedback">
+        <div class="container">
+          <h2 class="section-title">Оставить заявку</h2>
+          <div class="feedback__container mx-auto">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-8">
+                <form
+                  class="feedback-form w-100 d-flex flex-column"
+                  id="feedback-form"
+                  action="send.php"
+                  method="POST"
+                >
+                  <div class="feedback-form__field mb-3">
+                    <input
+                      type="text"
+                      class="feedback-form__input"
+                      id="feedback-name"
+                      name="name"
+                      placeholder="Ваше имя *"
+                      required
+                    />
+                  </div>
+                  <div class="feedback-form__field mb-4">
+                    <input
+                      type="tel"
+                      class="feedback-form__input"
+                      id="feedback-phone"
+                      name="tel"
+                      placeholder="Телефон *"
+                      required
+                    />
+                  </div>
+                  <div class="feedback-form__footer d-flex flex-column">
+                    <button type="submit" class="feedback-form__submit mb-3">
+                      Отправить
+                    </button>
+                    <span class="feedback__agreement">
+                      Отправляя сообщение, вы соглашаетесь с
+                      <a class="feedback__agreement-link" href="#!"
+                        >Политикой обработки персональных данных</a
+                      >.
+                    </span>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
