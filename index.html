@@ -145,7 +145,7 @@
 
             <div class="header__actions">
               <a
-                href="https://t.me/podboroff"
+                href="#feedback"
                 type="button"
                 class="header__button header__button--primary"
               >
@@ -664,6 +664,47 @@
                       required
                     />
                   </div>
+                  <div class="feedback-form__field mb-4">
+                    <div class="feedback-radio">
+                      <label class="feedback-radio__item">
+                        <input
+                          type="radio"
+                          name="service"
+                          value="Разовый осмотр автомобиля"
+                          required
+                        />
+                        <span class="feedback-radio__custom"></span>
+                        <span class="feedback-radio__text">
+                          Разовый осмотр автомобиля <small>от 3 000 ₽</small>
+                        </span>
+                      </label>
+
+                      <label class="feedback-radio__item">
+                        <input
+                          type="radio"
+                          name="service"
+                          value="Эксперт на день"
+                        />
+                        <span class="feedback-radio__custom"></span>
+                        <span class="feedback-radio__text">
+                          Эксперт на день <small>15 000 ₽</small>
+                        </span>
+                      </label>
+
+                      <label class="feedback-radio__item">
+                        <input
+                          type="radio"
+                          name="service"
+                          value="Подбор автомобиля под ключ"
+                        />
+                        <span class="feedback-radio__custom"></span>
+                        <span class="feedback-radio__text">
+                          Подбор автомобиля под ключ <small>от 30 000 ₽</small>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+
                   <div class="feedback-form__footer d-flex flex-column">
                     <button type="submit" class="feedback-form__submit mb-3">
                       Отправить
@@ -694,6 +735,7 @@
 
     <footer class="footer"></footer>
 
+    <script src="https://unpkg.com/imask"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>

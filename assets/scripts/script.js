@@ -107,3 +107,44 @@ document.addEventListener("DOMContentLoaded", function () {
       : "Подробнее";
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const phoneInput = document.getElementById("feedback-phone");
+
+  if (phoneInput) {
+    IMask(phoneInput, {
+      mask: "+{7} (000) 000-00-00",
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("feedback-form");
+  if (!form) return;
+
+  const action = form.getAttribute("action");
+  const endpoint = action && action !== "" ? action : "../../send.php";
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        body: new FormData(form),
+      });
+
+      const data = await response.json().catch(() => null);
+
+      if (response.ok && data?.status === "success") {
+        alert(data.message || "Заявка отправлена. Мы свяжемся с вами.");
+        form.reset();
+      } else {
+        alert(data?.message || "Ошибка отправки. Попробуйте позже.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Ошибка соединения с сервером.");
+    }
+  });
+});
