@@ -39,7 +39,7 @@ try {
     $mail->Password = "67CFYMMhLCQdaAB9e3Zw";
 
     $mail->setFrom("toni-wheel@inbox.ru", "Заявка с сайта");
-    $mail->addAddress("toni-wheel@inbox.ru");
+    $mail->addAddress("cck96@yandex.ru");
 
     $mail->isHTML(true);
     $mail->Subject = "Новая заявка с сайта";
