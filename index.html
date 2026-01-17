@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -633,104 +633,150 @@
       </section>
 
       <section class="feedback py-4 py-lg-5" id="feedback">
-        <div class="container">
+        <div class="container-fluid">
           <h2 class="section-title">Оставить заявку</h2>
-          <div class="feedback__container mx-auto">
-            <div class="row justify-content-center">
-              <div class="col-12 col-lg-8">
-                <form
-                  class="feedback-form w-100 d-flex flex-column"
-                  id="feedback-form"
-                  action="send.php"
-                  method="POST"
-                >
-                  <div class="feedback-form__field mb-3">
-                    <input
-                      type="text"
-                      class="feedback-form__input"
-                      id="feedback-name"
-                      name="name"
-                      placeholder="Ваше имя *"
-                      required
-                    />
-                  </div>
-                  <div class="feedback-form__field mb-4">
-                    <input
-                      type="tel"
-                      class="feedback-form__input"
-                      id="feedback-phone"
-                      name="tel"
-                      placeholder="Телефон *"
-                      required
-                    />
-                  </div>
-                  <div class="feedback-form__field mb-4">
-                    <div class="feedback-radio">
-                      <label class="feedback-radio__item">
+          <div class="row">
+            <div class="col-6">
+              <div class="feedback__container mx-auto">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-lg-8">
+                    <form
+                      class="feedback-form w-100 d-flex flex-column"
+                      id="feedback-form"
+                      action="send.php"
+                      method="POST"
+                    >
+                      <div class="feedback-form__field mb-3">
                         <input
-                          type="radio"
-                          name="service"
-                          value="Разовый осмотр автомобиля"
+                          type="text"
+                          class="feedback-form__input"
+                          id="feedback-name"
+                          name="name"
+                          placeholder="Ваше имя *"
                           required
                         />
-                        <span class="feedback-radio__custom"></span>
-                        <span class="feedback-radio__text">
-                          Разовый осмотр автомобиля <small>от 3 000 ₽</small>
-                        </span>
-                      </label>
-
-                      <label class="feedback-radio__item">
+                      </div>
+                      <div class="feedback-form__field mb-4">
                         <input
-                          type="radio"
-                          name="service"
-                          value="Эксперт на день"
+                          type="tel"
+                          class="feedback-form__input"
+                          id="feedback-phone"
+                          name="tel"
+                          placeholder="Телефон *"
+                          required
                         />
-                        <span class="feedback-radio__custom"></span>
-                        <span class="feedback-radio__text">
-                          Эксперт на день <small>15 000 ₽</small>
-                        </span>
-                      </label>
+                      </div>
+                      <div class="feedback-form__field mb-4">
+                        <div class="feedback-radio">
+                          <label class="feedback-radio__item">
+                            <input
+                              type="radio"
+                              name="service"
+                              value="Разовый осмотр автомобиля"
+                              required
+                              checked
+                            />
+                            <span class="feedback-radio__custom"></span>
+                            <span class="feedback-radio__text">
+                              Разовый осмотр автомобиля
+                              <small>от 3 000 ₽</small>
+                            </span>
+                          </label>
 
-                      <label class="feedback-radio__item">
-                        <input
-                          type="radio"
-                          name="service"
-                          value="Подбор автомобиля под ключ"
-                        />
-                        <span class="feedback-radio__custom"></span>
-                        <span class="feedback-radio__text">
-                          Подбор автомобиля под ключ <small>от 30 000 ₽</small>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
+                          <label class="feedback-radio__item">
+                            <input
+                              type="radio"
+                              name="service"
+                              value="Эксперт на день"
+                            />
+                            <span class="feedback-radio__custom"></span>
+                            <span class="feedback-radio__text">
+                              Эксперт на день <small>15 000 ₽</small>
+                            </span>
+                          </label>
 
-                  <div class="feedback-form__footer d-flex flex-column">
-                    <button type="submit" class="feedback-form__submit mb-3">
-                      Отправить
-                    </button>
-                    <span class="feedback__agreement">
-                      Отправляя сообщение, вы соглашаетесь с
-                      <a class="feedback__agreement-link" href="#!"
-                        >Политикой обработки персональных данных</a
-                      >.
-                    </span>
+                          <label class="feedback-radio__item">
+                            <input
+                              type="radio"
+                              name="service"
+                              value="Подбор автомобиля под ключ"
+                            />
+                            <span class="feedback-radio__custom"></span>
+                            <span class="feedback-radio__text">
+                              Подбор автомобиля под ключ
+                              <small>от 30 000 ₽</small>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="feedback-form__footer d-flex flex-column">
+                        <button
+                          type="submit"
+                          class="feedback-form__submit mb-3"
+                        >
+                          Отправить
+                        </button>
+                        <span class="feedback__agreement">
+                          Отправляя сообщение, вы соглашаетесь с
+                          <a class="feedback__agreement-link" href="#!"
+                            >Политикой обработки персональных данных</a
+                          >.
+                        </span>
+                      </div>
+                    </form>
                   </div>
-                </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="feedback-map">
+                <a
+                  class="feedback-map__overlay"
+                  href="https://yandex.ru/maps/org/a2_service/150233796182/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Открыть A2-Service в Яндекс Картах"
+                ></a>
+
+                <a
+                  class="feedback-map__link feedback-map__link--title"
+                  href="https://yandex.ru/maps/org/a2_service/150233796182/"
+                  target="_blank"
+                  rel="noopener"
+                  >A2-Service</a
+                >
+
+                <a
+                  class="feedback-map__link feedback-map__link--category-1"
+                  href="https://yandex.ru/maps/54/yekaterinburg/category/car_service_auto_repair/184105246/"
+                  target="_blank"
+                  rel="noopener"
+                  >Автосервис, автотехцентр в Екатеринбурге</a
+                >
+
+                <a
+                  class="feedback-map__link feedback-map__link--category-2"
+                  href="https://yandex.ru/maps/54/yekaterinburg/category/car_wash/184105244/"
+                  target="_blank"
+                  rel="noopener"
+                  >Автомойка в Екатеринбурге</a
+                >
+
+                <iframe
+                  class="feedback-map__frame"
+                  src="https://yandex.ru/map-widget/v1/org/a2_service/150233796182/?ll=60.594429%2C56.829207&z=16"
+                  width="100%"
+                  height="500"
+                  frameborder="0"
+                  allowfullscreen="true"
+                ></iframe>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="yandex-map-section">
-        <div id="yandex-map" class="yandex-map"></div>
-      </section>
-
-      <script
-        src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=YOUR_API_KEY"
-        type="text/javascript"
-      ></script>
     </main>
 
     <footer class="footer"></footer>

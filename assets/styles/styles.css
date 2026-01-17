@@ -108,7 +108,8 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       1200px 600px at 15% 35%,
       rgba(0, 0, 0, 0.55) 0%,
       rgba(0, 0, 0, 0.25) 45%,
@@ -172,8 +173,13 @@ html {
   font-size: 15px;
   padding: 16px 28px;
   border-radius: 16px;
-  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease,
-    color 160ms ease, border-color 160ms ease, opacity 160ms ease;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    background 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease,
+    opacity 160ms ease;
   user-select: none;
   outline: none;
   display: inline-flex;
@@ -185,13 +191,15 @@ html {
 .header__button--primary {
   color: #1a1a1a;
   background: linear-gradient(135deg, #ffcc80 0%, #ff7a18 45%, #ff3d00 100%);
-  box-shadow: 0 18px 42px rgba(255, 122, 24, 0.45),
+  box-shadow:
+    0 18px 42px rgba(255, 122, 24, 0.45),
     0 10px 22px rgba(0, 0, 0, 0.4);
 }
 
 .header__button--primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 22px 48px rgba(255, 122, 24, 0.55),
+  box-shadow:
+    0 22px 48px rgba(255, 122, 24, 0.55),
     0 12px 26px rgba(0, 0, 0, 0.45);
 }
 
@@ -295,11 +303,14 @@ html {
   overflow: hidden;
   cursor: pointer;
   transform: translateZ(0);
-  transition: transform 200ms ease, box-shadow 200ms ease;
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
 }
 
 .services__grid .service-card {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45),
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.45),
     0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 
@@ -382,8 +393,12 @@ html {
   letter-spacing: 0.04em;
   font-size: 13px;
   cursor: pointer;
-  transition: transform 160ms ease, background 160ms ease,
-    border-color 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
+  transition:
+    transform 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    opacity 160ms ease;
   text-align: center;
 }
 
@@ -514,7 +529,8 @@ html {
   position: relative;
   border-radius: 18px;
   overflow: hidden;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.06) 0%,
       rgba(0, 0, 0, 0.25) 55%,
@@ -530,7 +546,8 @@ html {
       rgba(0, 0, 0, 0.35) 0%,
       rgba(0, 0, 0, 0) 60%
     );
-  box-shadow: inset 0 10px 22px rgba(0, 0, 0, 0.45),
+  box-shadow:
+    inset 0 10px 22px rgba(0, 0, 0, 0.45),
     inset 0 -10px 22px rgba(0, 0, 0, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
@@ -636,7 +653,8 @@ html {
   border-radius: 16px;
   background: url(../images/card-bg.png) center / cover;
   background-size: 200%;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45),
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.45),
     0 0 0 1px rgba(255, 255, 255, 0.04);
   overflow: hidden;
   min-height: 400px;
@@ -725,13 +743,17 @@ html {
   height: auto;
   opacity: 0.5;
   filter: blur(0.2px);
-  transition: opacity 0.2s ease, filter 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    filter 0.2s ease;
 }
 
 .cases-list .case-card {
   height: 100%;
   width: 100%;
-  transition: opacity 0.2s ease, filter 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    filter 0.2s ease;
 }
 
 .cases-list .owl-item.active {
@@ -1128,8 +1150,13 @@ html {
 
 .feedback__container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 16px;
-  max-width: 600px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
   padding: 30px;
@@ -1141,7 +1168,7 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.25);
   z-index: 0;
 }
 
@@ -1158,8 +1185,11 @@ html {
   font-weight: 500;
   color: #111;
   letter-spacing: 0.66px;
-  transition: background-color 0.3s ease, border-color 0.3s ease,
-    box-shadow 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
   color: #fff;
   border: 2px solid #fff;
 }
@@ -1180,7 +1210,9 @@ html {
   font-weight: 600;
   border-radius: 16px;
   letter-spacing: 0.5px;
-  transition: background-position 0.3s ease, transform 0.3s ease;
+  transition:
+    background-position 0.3s ease,
+    transform 0.3s ease;
   cursor: pointer;
   text-align: center;
   color: #fff;
@@ -1270,7 +1302,6 @@ html {
   border: 2px solid rgba(255, 255, 255, 0.7);
   position: relative;
   flex-shrink: 0;
-  transition: all 0.25s ease;
 }
 
 .feedback-radio__custom::after {
@@ -1278,19 +1309,16 @@ html {
   position: absolute;
   inset: 4px;
   border-radius: 50%;
-  background: var(--accent);
+  background: #ff7a18;
   opacity: 0;
-  transform: scale(0.5);
-  transition: all 0.25s ease;
 }
 
 .feedback-radio__item input:checked + .feedback-radio__custom {
-  border-color: var(--accent);
+  border-color: #ff7a18;
 }
 
 .feedback-radio__item input:checked + .feedback-radio__custom::after {
   opacity: 1;
-  transform: scale(1);
 }
 
 .feedback-radio__text {
@@ -1308,4 +1336,44 @@ html {
   .feedback-radio__item {
     font-size: 14px;
   }
+}
+
+.feedback-map {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.feedback-map__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+.feedback-map__link {
+  position: absolute;
+  left: 0;
+  z-index: 4;
+  color: #eee;
+  font-size: 12px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.feedback-map__link--title {
+  top: 0;
+}
+
+.feedback-map__link--category-1 {
+  top: 14px;
+}
+
+.feedback-map__link--category-2 {
+  top: 28px;
+}
+
+.feedback-map__frame {
+  position: relative;
+  z-index: 1;
+  display: block;
 }
