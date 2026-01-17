@@ -1377,3 +1377,13 @@ html {
   z-index: 1;
   display: block;
 }
+
+@media (max-width: 992px) {
+  #feedback .col-12 {
+    max-width: 600px;
+  }
+
+  #feedback .feedback-map {
+    margin-top: 24px;
+  }
+}
