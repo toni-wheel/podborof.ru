@@ -96,7 +96,7 @@ html {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../images/promo.png");
+  background-image: url("../images/webp/promo.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -234,7 +234,7 @@ html {
 
 .main {
   position: relative;
-  background-image: url("../images/bg.png");
+  background-image: url("../images/webp/bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -297,7 +297,7 @@ html {
 .service-card {
   display: flex;
   flex-direction: column;
-  background: url("../images/card-bg.png") center/cover;
+  background: url("../images/webp/card-bg.webp") center/cover;
   background-size: 200%;
   border-radius: 16px;
   overflow: hidden;
@@ -721,7 +721,7 @@ html {
   width: 100%;
   padding: 20px;
   border-radius: 16px;
-  background: url(../images/card-bg.png) center / cover;
+  background: url(../images/webp/card-bg.webp) center / cover;
   background-size: 200%;
   box-shadow:
     0 8px 24px rgba(0, 0, 0, 0.45),
@@ -1230,7 +1230,7 @@ html {
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
   padding: 30px;
-  background: url(../images/card-bg.png) center / cover;
+  background: url(../images/webp/card-bg.webp) center / cover;
   background-size: 200%;
 }
 

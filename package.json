@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "sharp": "^0.34.5"
+  },
+  "scripts": {
+    "webp:all": "node webp.js"
+  }
+}
