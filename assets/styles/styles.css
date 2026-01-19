@@ -427,6 +427,13 @@ html {
   margin-top: auto;
 }
 
+@media (max-width: 1200px) {
+  .services__grid .service-card,
+  .services__grid .service-card:hover {
+    transform: none;
+  }
+}
+
 .text-orange {
   color: #ff974e;
 }
